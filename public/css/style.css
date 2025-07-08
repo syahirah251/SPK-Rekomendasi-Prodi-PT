@@ -1,0 +1,134 @@
+html,
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container-fluid {
+    height: 90vh; /* Ensures the container takes up the full viewport height */
+}
+
+.header {
+    background-color: #007bff; /* Sesuaikan dengan warna header jika perlu */
+    color: white;
+    padding: 20px; /* Ukuran padding bisa disesuaikan untuk membuat header lebih besar atau lebih kecil */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .school-name h1 {
+    margin: 0;
+    font-size: 28px; /* Ukuran font bisa disesuaikan */
+}
+
+.header .user-account {
+    display: flex;
+    align-items: center;
+}
+
+.header .user-account span {
+    margin-right: 20px;
+    font-size: 16px; /* Sesuaikan ukuran font */
+}
+
+.sidebar {
+    flex: 0 0 250px; /* Sidebar dengan lebar tetap */
+    background-color: #a5c0c2; /* Warna background sidebar */
+    padding: 20px;
+    height: 100%; /* Memastikan sidebar penuh */
+    overflow-y: auto; /* Menambahkan scroll jika konten sidebar melebihi tinggi */
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .menu-item {
+    font-size: 18px; /* Tetap menjaga ukuran font */
+    margin-bottom: 25px; /* Memberikan jarak vertikal lebih besar */
+    padding: 10px 15px;
+    color: #fff; /* Warna teks */
+    background-color: #668d8e; /* Warna latar default menu */
+    border-radius: 5px;
+    text-decoration: none; /* Menghapus garis bawah jika item adalah link */
+    transition: background-color 0.3s; /* Efek hover */
+}
+
+.sidebar .menu-item:hover {
+    background-color: #506b6d; /* Darker background on hover */
+}
+
+.sidebar .menu-item.active {
+    background-color: #506b6d; /* Indicate active menu item */
+}
+.form-group {
+    flex-grow: 1;
+}
+input#exampleDataList {
+    max-width: 100%;
+    width: 100%;
+}
+
+.menu-item {
+    margin: 15px 0;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px; /* Sesuaikan ukuran font */
+    transition: background-color 0.3s;
+}
+
+.menu-item a:hover {
+    background-color: #cfd8dc; /* Sesuaikan dengan warna hover */
+}
+
+.header {
+    background-color: #007bff; /* Sesuaikan warna header jika perlu */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .school-name h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header .user-account {
+    margin-left: auto; /* Menjadikan elemen ini berada di paling kanan */
+    display: flex;
+    align-items: center;
+}
+
+.header .user-account span {
+    margin-right: 15px;
+}
+
+.header .user-account a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.header .user-account a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
